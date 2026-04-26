@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRIND Personal Gym — 3ヶ月で、身体が変わる。</title>
+  <meta name="description" content="完全マンツーマン指導のパーソナルジムGRIND。3ヶ月で確実に結果を出す。渋谷駅徒歩3分。無料体験受付中。" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GRIND Personal Gym" />
+  <meta property="og:title" content="GRIND — 3ヶ月で、身体が変わる。" />
+  <meta property="og:description" content="完全マンツーマン指導のパーソナルジム。食事指導込みで3ヶ月確実に結果を出す。渋谷駅徒歩3分。" />
+  <meta property="og:url" content="https://grind-gym.jp" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=630&fit=crop&q=80" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GRIND — 3ヶ月で、身体が変わる。" />
+  <meta name="twitter:description" content="完全マンツーマン指導のパーソナルジム。食事指導込みで3ヶ月確実に結果を出す。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=630&fit=crop&q=80" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            grind: {
+              red:   '#ef4444',
+              dark:  '#111111',
+              gray:  '#1a1a1a',
+              mid:   '#333333',
+              light: '#888888',
+            }
+          },
+          fontFamily: {
+            sans: ['"游ゴシック"', '"Yu Gothic"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+      will-change: opacity, transform;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-grind-dark text-white font-sans">
+
+  <!-- ナビゲーション -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-grind-dark/90 backdrop-blur-sm border-b border-grind-mid">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+      <span class="text-grind-red font-black tracking-widest text-lg"><span aria-hidden="true">💪</span> GRIND</span>
+      <a href="#cta"
+         class="bg-grind-red text-white text-sm px-5 py-2 font-bold hover:bg-red-600 transition">
+        無料体験
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-14">
+
+    <!-- ① ヒーローセクション -->
+    <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
+        alt="" role="presentation"
+        loading="eager" fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-grind-dark/65"></div>
+      <div class="relative z-10 px-6 max-w-2xl mx-auto">
+        <p class="text-grind-red text-xs tracking-[0.4em] mb-4 font-bold">PERSONAL TRAINING GYM</p>
+        <h1 class="text-white text-5xl md:text-6xl font-black leading-tight mb-4">
+          3ヶ月で、<br><span class="text-grind-red">身体が変わる。</span>
+        </h1>
+        <p class="text-white/70 text-base md:text-lg mb-10">
+          完全マンツーマン指導のパーソナルジム
+        </p>
+        <a href="#cta"
+           class="inline-block bg-grind-red text-white font-black px-10 py-4 hover:bg-red-600 transition text-sm tracking-widest">
+          無料体験を予約する →
+        </a>
+        <p class="text-white/40 text-xs mt-4">※ 入会金・キャンセル料は一切不要</p>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce text-2xl" aria-hidden="true">↓</div>
+    </section>
+
+    <!-- ② 共感セクション -->
+    <section class="bg-grind-gray py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-black text-white mb-2">
+          こんな悩み、<span class="text-grind-red">ありませんか？</span>
+        </h2>
+        <p class="text-grind-light text-sm mb-14">多くの方が同じ壁にぶつかっています</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
+          <div class="bg-grind-mid rounded-lg p-8 text-center">
+            <span class="block text-4xl mb-4" aria-hidden="true">😞</span>
+            <h3 class="text-white font-bold text-base mb-2">一人では続かない…</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              モチベーションが続かず<br>気づけばやめてしまっていた
+            </p>
+          </div>
+
+          <div class="bg-grind-mid rounded-lg p-8 text-center">
+            <span class="block text-4xl mb-4" aria-hidden="true">🤔</span>
+            <h3 class="text-white font-bold text-base mb-2">何をすればいいか分からない</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              情報が多すぎて<br>何から始めるべきか迷っている
+            </p>
+          </div>
+
+          <div class="bg-grind-mid rounded-lg p-8 text-center">
+            <span class="block text-4xl mb-4" aria-hidden="true">📉</span>
+            <h3 class="text-white font-bold text-base mb-2">頑張っても結果が出ない</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              ジムに通い続けても<br>体型が変わる気がしない
+            </p>
+          </div>
+
+        </div>
+
+        <p class="text-grind-red text-xl md:text-2xl font-black">
+          それ、GRINDで全部解決できます。
+        </p>
+      </div>
+    </section>
+
+    <!-- ③ 特徴セクション -->
+    <section class="bg-grind-dark py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
+          GRINDが選ばれる<span class="text-grind-red"> 3つの理由</span>
+        </h2>
+        <p class="text-center text-grind-light text-sm mb-14">Why GRIND</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
+            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">👤</div>
+            <h3 class="text-white font-black text-lg mb-3">完全マンツーマン指導</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              担当トレーナーが毎回マンツーマンで指導。あなたの体質・目標に合わせた完全オーダーメイドのトレーニング。
+            </p>
+          </div>
+
+          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
+            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">🥩</div>
+            <h3 class="text-white font-black text-lg mb-3">食事・生活習慣も丸ごとサポート</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              トレーニングだけでなく食事管理・睡眠・日常習慣まで指導。ジム以外の時間も含めて変わる。
+            </p>
+          </div>
+
+          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
+            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">📅</div>
+            <h3 class="text-white font-black text-lg mb-3">週2回・60分で確実に結果</h3>
+            <p class="text-grind-light text-sm leading-relaxed">
+              忙しい方でも通いやすい週2回プログラム。3ヶ月で平均-8.3kg・体脂肪率-5%の実績。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ 実績セクション -->
+    <section class="bg-grind-red py-20 px-6 fade-in">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-white text-2xl md:text-3xl font-black mb-2">数字が証明する、GRINDの結果</h2>
+        <p class="text-white/70 text-sm mb-14">Results</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div>
+            <div class="text-white text-5xl md:text-6xl font-black mb-2">
+              <span class="count-up" data-target="500" data-suffix="+">0</span>
+            </div>
+            <div class="text-white/80 text-sm font-bold tracking-wider">累計会員数（名）</div>
+          </div>
+
+          <div>
+            <div class="text-white text-5xl md:text-6xl font-black mb-2">
+              -<span class="count-up" data-target="83" data-decimal="true" data-suffix="">0</span>kg
+            </div>
+            <div class="text-white/80 text-sm font-bold tracking-wider">3ヶ月平均体重減少</div>
+          </div>
+
+          <div>
+            <div class="text-white text-5xl md:text-6xl font-black mb-2">
+              <span class="count-up" data-target="98" data-suffix="%">0</span>
+            </div>
+            <div class="text-white/80 text-sm font-bold tracking-wider">顧客満足度</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ 体験談セクション -->
+    <section class="bg-grind-gray py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
+          会員の<span class="text-grind-red">リアルな声</span>
+        </h2>
+        <p class="text-center text-grind-light text-sm mb-14">Testimonials</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
+            <div class="flex flex-wrap gap-2 mb-4 items-center">
+              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 82kg</div>
+              <div class="text-grind-light text-sm">→</div>
+              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 71kg</div>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-4">
+              "3ヶ月で11kg落とせました。食事管理まで一緒にやってもらえたのが大きかった。一人じゃ絶対続かなかったです。"
+            </p>
+            <div class="text-grind-red font-bold text-sm">Aさん・32歳・会社員</div>
+            <div class="text-grind-light text-xs mt-1">INTENSIVEプラン3ヶ月</div>
+          </div>
+
+          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
+            <div class="flex flex-wrap gap-2 mb-4 items-center">
+              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 76kg</div>
+              <div class="text-grind-light text-sm">→</div>
+              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 68kg</div>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-4">
+              "週2回だけでここまで変われるとは思いませんでした。体重より体型が変わったのが一番嬉しい！"
+            </p>
+            <div class="text-grind-red font-bold text-sm">Bさん・28歳・エンジニア</div>
+            <div class="text-grind-light text-xs mt-1">STANDARDプラン3ヶ月</div>
+          </div>
+
+          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
+            <div class="flex flex-wrap gap-2 mb-4 items-center">
+              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 90kg</div>
+              <div class="text-grind-light text-sm">→</div>
+              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 77kg</div>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-4">
+              "ずっと運動が苦手で諦めていましたが、トレーナーさんが親身に対応してくれてやる気が出ました。"
+            </p>
+            <div class="text-grind-red font-bold text-sm">Cさん・40歳・自営業</div>
+            <div class="text-grind-light text-xs mt-1">INTENSIVEプラン3ヶ月</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ 料金プランセクション -->
+    <section class="bg-grind-dark py-20 px-6 fade-in">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
+          料金<span class="text-grind-red">プラン</span>
+        </h2>
+        <p class="text-center text-grind-light text-sm mb-14">Pricing</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="border border-grind-mid rounded-lg p-8">
+            <p class="text-grind-light text-xs tracking-widest mb-2">STANDARD</p>
+            <div class="text-white text-4xl font-black mb-1">
+              ¥49,800<span class="text-grind-light text-base font-normal">/月</span>
+            </div>
+            <p class="text-grind-light text-xs mb-6">週2回・月8セッション</p>
+            <ul class="space-y-3 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> マンツーマントレーニング</li>
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 食事アドバイス</li>
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 体組成測定</li>
+            </ul>
+          </div>
+
+          <div class="border-2 border-grind-red rounded-lg p-8 relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-grind-red text-white text-xs font-black px-4 py-1">
+              おすすめ
+            </div>
+            <p class="text-grind-red text-xs tracking-widest mb-2">INTENSIVE</p>
+            <div class="text-white text-4xl font-black mb-1">
+              ¥69,800<span class="text-grind-light text-base font-normal">/月</span>
+            </div>
+            <p class="text-grind-light text-xs mb-6">週3回・月12セッション</p>
+            <ul class="space-y-3 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> マンツーマントレーニング</li>
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 食事・生活習慣サポート</li>
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 体組成測定</li>
+              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> LINEサポート無制限</li>
+            </ul>
+          </div>
+
+        </div>
+        <p class="text-center text-grind-light text-xs mt-6">
+          ※ 全プラン初回無料体験あり　※ 入会金・縛りなし
+        </p>
+      </div>
+    </section>
+
+    <!-- ⑦ 最終CTAセクション -->
+    <section id="cta" class="bg-grind-red py-20 px-6 text-center fade-in">
+      <p class="text-white/70 text-xs tracking-[0.3em] mb-4">FREE TRIAL</p>
+      <h2 class="text-white text-3xl md:text-4xl font-black mb-4">
+        まず、無料体験から<br>始めよう。
+      </h2>
+      <p class="text-white/70 text-sm mb-10">
+        体験当日は手ぶらでOK。着替え・シューズはご用意しています。
+      </p>
+      <a href="tel:03-XXXX-XXXX"
+         class="inline-block bg-white text-grind-red font-black px-12 py-4 hover:bg-gray-100 transition text-sm tracking-widest mb-6">
+        無料体験を予約する →
+      </a>
+      <div class="text-white/80 text-sm">
+        <span aria-hidden="true">📞</span> お電話でも受付中　<span class="font-bold">03-XXXX-XXXX</span>
+      </div>
+      <p class="text-white/40 text-xs mt-4">受付時間：平日 10:00〜21:00 / 土日 9:00〜19:00</p>
+    </section>
+
+    <!-- ⑧ アクセスセクション -->
+    <section class="bg-grind-dark py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
+          アクセス・<span class="text-grind-red">営業時間</span>
+        </h2>
+        <p class="text-center text-grind-light text-sm mb-12">Access & Hours</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+          <div class="rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747968668696!2d139.70113!3d35.658034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC35YWt!5e0!3m2!1sja!2sjp!4v1700000000000"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="GRINDの地図">
+            </iframe>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">ADDRESS</p>
+              <p class="text-white">東京都渋谷区〇〇町2-3-4<br>
+                <span class="text-sm text-grind-light">渋谷駅より徒歩3分</span>
+              </p>
+            </div>
+            <div>
+              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">HOURS</p>
+              <p class="text-white">
+                平日　10:00 〜 21:00<br>
+                土・日　9:00 〜 19:00<br>
+                <span class="text-sm text-grind-light">定休日：年中無休</span>
+              </p>
+            </div>
+            <div>
+              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">TEL</p>
+              <p class="text-white">03-XXXX-XXXX</p>
+            </div>
+            <a href="#cta"
+               class="inline-block bg-grind-red text-white font-black px-8 py-3 hover:bg-red-600 transition text-sm tracking-widest w-full text-center">
+              無料体験を予約する →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-black text-grind-light text-center text-xs py-6">
+    © 2026 GRIND Personal Gym. All rights reserved.
+  </footer>
+
+  <script>
+    // フェードインアニメーション
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+    } else {
+      const fadeObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            fadeObserver.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+    }
+
+    // カウントアップアニメーション
+    const countObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const isDecimal = el.dataset.decimal === 'true';
+        const duration = 1500;
+        const interval = 16;
+        const increment = target / (duration / interval);
+        let current = 0;
+        const timer = setInterval(() => {
+          current = Math.min(current + increment, target);
+          el.textContent = isDecimal
+            ? (current / 10).toFixed(1) + suffix
+            : Math.floor(current) + suffix;
+          if (current >= target) clearInterval(timer);
+        }, interval);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count-up').forEach(el => countObserver.observe(el));
+  </script>
+</body>
+</html>
