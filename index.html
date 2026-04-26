@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GRIND Personal Gym — 3ヶ月で、身体が変わる。</title>
-  <meta name="description" content="完全マンツーマン指導のパーソナルジムGRIND。3ヶ月で確実に結果を出す。渋谷駅徒歩3分。無料体験受付中。" />
+  <title>Café Verde — 自然に、豊かに、あなたらしく。</title>
+  <meta name="description" content="Café Verde — 自然素材にこだわった、心と体に優しいカフェです。Wi-Fi・電源完備で作業にも最適。" />
 
-  <!-- OGP -->
+  <!-- OGP（SNSシェア時のプレビュー設定） -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="GRIND Personal Gym" />
-  <meta property="og:title" content="GRIND — 3ヶ月で、身体が変わる。" />
-  <meta property="og:description" content="完全マンツーマン指導のパーソナルジム。食事指導込みで3ヶ月確実に結果を出す。渋谷駅徒歩3分。" />
-  <meta property="og:url" content="https://grind-gym.jp" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=630&fit=crop&q=80" />
+  <meta property="og:site_name" content="Café Verde" />
+  <meta property="og:title" content="Café Verde — 自然に、豊かに、あなたらしく。" />
+  <meta property="og:description" content="グルテンフリー・オーガニック・Wi-Fi完備の作業カフェ。自然素材にこだわった、心と体に優しいカフェです。" />
+  <meta property="og:url" content="https://cafeverde.jp" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&h=630&fit=crop&q=80" />
   <meta property="og:locale" content="ja_JP" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GRIND — 3ヶ月で、身体が変わる。" />
-  <meta name="twitter:description" content="完全マンツーマン指導のパーソナルジム。食事指導込みで3ヶ月確実に結果を出す。" />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=630&fit=crop&q=80" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Café Verde — 自然に、豊かに、あなたらしく。" />
+  <meta name="twitter:description" content="グルテンフリー・オーガニック・Wi-Fi完備の作業カフェ。自然素材にこだわった、心と体に優しいカフェです。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&h=630&fit=crop&q=80" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            grind: {
-              red:   '#ef4444',
-              dark:  '#111111',
-              gray:  '#1a1a1a',
-              mid:   '#333333',
-              light: '#888888',
+            verde: {
+              dark:  '#2d5a2d',
+              mid:   '#4a8a4a',
+              light: '#6b9e62',
+              pale:  '#c8ddc0',
+              bg:    '#f5faf4',
             }
           },
           fontFamily: {
@@ -54,319 +55,324 @@
     }
   </style>
 </head>
-<body class="bg-grind-dark text-white font-sans">
+<body class="bg-white text-gray-800 font-sans">
 
   <!-- ナビゲーション -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-grind-dark/90 backdrop-blur-sm border-b border-grind-mid">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-verde-pale">
     <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-      <span class="text-grind-red font-black tracking-widest text-lg"><span aria-hidden="true">💪</span> GRIND</span>
-      <a href="#cta"
-         class="bg-grind-red text-white text-sm px-5 py-2 font-bold hover:bg-red-600 transition">
-        無料体験
+      <span class="text-verde-dark font-bold tracking-widest text-lg"><span aria-hidden="true">🌿</span> CAFÉ VERDE</span>
+      <a href="#access"
+         class="bg-verde-dark text-white text-sm px-5 py-2 rounded-full hover:bg-verde-mid transition">
+        アクセス
       </a>
     </div>
   </nav>
 
+  <!-- セクション placeholder -->
   <main class="pt-14">
-
     <!-- ① ヒーローセクション -->
     <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+      <!-- 背景画像 -->
       <img
-        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
+        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=80"
         alt="" role="presentation"
         loading="eager" fetchpriority="high"
         class="absolute inset-0 w-full h-full object-cover"
       />
-      <div class="absolute inset-0 bg-grind-dark/65"></div>
+      <!-- 緑のオーバーレイ -->
+      <div class="absolute inset-0 bg-verde-dark/60"></div>
+
+      <!-- テキスト -->
       <div class="relative z-10 px-6 max-w-2xl mx-auto">
-        <p class="text-grind-red text-xs tracking-[0.4em] mb-4 font-bold">PERSONAL TRAINING GYM</p>
-        <h1 class="text-white text-5xl md:text-6xl font-black leading-tight mb-4">
-          3ヶ月で、<br><span class="text-grind-red">身体が変わる。</span>
+        <p class="text-verde-pale text-sm tracking-[0.3em] mb-4" aria-hidden="true">CAFÉ VERDE</p>
+        <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-4">
+          自然に、豊かに、<br>あなたらしく。
         </h1>
-        <p class="text-white/70 text-base md:text-lg mb-10">
-          完全マンツーマン指導のパーソナルジム
+        <p class="text-white/80 text-base md:text-lg mb-10">
+          グルテンフリー・オーガニック・Wi-Fi完備の作業カフェ
         </p>
-        <a href="#cta"
-           class="inline-block bg-grind-red text-white font-black px-10 py-4 hover:bg-red-600 transition text-sm tracking-widest">
-          無料体験を予約する →
+        <a href="#access"
+           class="inline-block bg-white text-verde-dark font-bold px-8 py-3 rounded-full hover:bg-verde-pale transition text-sm tracking-wide">
+          <span aria-hidden="true">📍</span> アクセスを見る
         </a>
-        <p class="text-white/40 text-xs mt-4">※ 入会金・キャンセル料は一切不要</p>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce text-2xl" aria-hidden="true">↓</div>
+
+      <!-- 下矢印 -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce text-2xl" aria-hidden="true">↓</div>
     </section>
 
-    <!-- ② 共感セクション -->
-    <section class="bg-grind-gray py-20 px-6 fade-in">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-black text-white mb-2">
-          こんな悩み、<span class="text-grind-red">ありませんか？</span>
-        </h2>
-        <p class="text-grind-light text-sm mb-14">多くの方が同じ壁にぶつかっています</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-
-          <div class="bg-grind-mid rounded-lg p-8 text-center">
-            <span class="block text-4xl mb-4" aria-hidden="true">😞</span>
-            <h3 class="text-white font-bold text-base mb-2">一人では続かない…</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              モチベーションが続かず<br>気づけばやめてしまっていた
-            </p>
-          </div>
-
-          <div class="bg-grind-mid rounded-lg p-8 text-center">
-            <span class="block text-4xl mb-4" aria-hidden="true">🤔</span>
-            <h3 class="text-white font-bold text-base mb-2">何をすればいいか分からない</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              情報が多すぎて<br>何から始めるべきか迷っている
-            </p>
-          </div>
-
-          <div class="bg-grind-mid rounded-lg p-8 text-center">
-            <span class="block text-4xl mb-4" aria-hidden="true">📉</span>
-            <h3 class="text-white font-bold text-base mb-2">頑張っても結果が出ない</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              ジムに通い続けても<br>体型が変わる気がしない
-            </p>
-          </div>
-
-        </div>
-
-        <p class="text-grind-red text-xl md:text-2xl font-black">
-          それ、GRINDで全部解決できます。
-        </p>
-      </div>
-    </section>
-
-    <!-- ③ 特徴セクション -->
-    <section class="bg-grind-dark py-20 px-6 fade-in">
+    <!-- ② 3つの特徴セクション -->
+    <section class="bg-verde-bg py-20 px-6 fade-in">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
-          GRINDが選ばれる<span class="text-grind-red"> 3つの理由</span>
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          Café Verde が選ばれる 3つの理由
         </h2>
-        <p class="text-center text-grind-light text-sm mb-14">Why GRIND</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
-            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">👤</div>
-            <h3 class="text-white font-black text-lg mb-3">完全マンツーマン指導</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              担当トレーナーが毎回マンツーマンで指導。あなたの体質・目標に合わせた完全オーダーメイドのトレーニング。
-            </p>
-          </div>
-
-          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
-            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">🥩</div>
-            <h3 class="text-white font-black text-lg mb-3">食事・生活習慣も丸ごとサポート</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              トレーニングだけでなく食事管理・睡眠・日常習慣まで指導。ジム以外の時間も含めて変わる。
-            </p>
-          </div>
-
-          <div class="border border-grind-mid rounded-lg p-8 hover:border-grind-red transition">
-            <div class="text-grind-red text-4xl mb-4" aria-hidden="true">📅</div>
-            <h3 class="text-white font-black text-lg mb-3">週2回・60分で確実に結果</h3>
-            <p class="text-grind-light text-sm leading-relaxed">
-              忙しい方でも通いやすい週2回プログラム。3ヶ月で平均-8.3kg・体脂肪率-5%の実績。
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ④ 実績セクション -->
-    <section class="bg-grind-red py-20 px-6 fade-in">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-white text-2xl md:text-3xl font-black mb-2">数字が証明する、GRINDの結果</h2>
-        <p class="text-white/70 text-sm mb-14">Results</p>
+        <p class="text-center text-gray-500 text-sm mb-12">Why Choose Us</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <div>
-            <div class="text-white text-5xl md:text-6xl font-black mb-2">
-              <span class="count-up" data-target="500" data-suffix="+">0</span>
-            </div>
-            <div class="text-white/80 text-sm font-bold tracking-wider">累計会員数（名）</div>
+          <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition">
+            <span class="block text-5xl mb-4" aria-hidden="true">🌿</span>
+            <h3 class="text-verde-dark font-bold text-lg mb-2">オーガニック素材</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              契約農家から届く<br>厳選した自然素材だけを使用。<br>体にやさしい味わいを提供します。
+            </p>
           </div>
 
-          <div>
-            <div class="text-white text-5xl md:text-6xl font-black mb-2">
-              -<span class="count-up" data-target="83" data-decimal="true" data-suffix="">0</span>kg
-            </div>
-            <div class="text-white/80 text-sm font-bold tracking-wider">3ヶ月平均体重減少</div>
+          <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition">
+            <span class="block text-5xl mb-4" aria-hidden="true">💻</span>
+            <h3 class="text-verde-dark font-bold text-lg mb-2">作業しやすい環境</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              全席に電源コンセント完備。<br>高速Wi-Fi・広いデスクで<br>集中できる空間を用意しています。
+            </p>
           </div>
 
-          <div>
-            <div class="text-white text-5xl md:text-6xl font-black mb-2">
-              <span class="count-up" data-target="98" data-suffix="%">0</span>
-            </div>
-            <div class="text-white/80 text-sm font-bold tracking-wider">顧客満足度</div>
+          <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition">
+            <span class="block text-5xl mb-4" aria-hidden="true">🥗</span>
+            <h3 class="text-verde-dark font-bold text-lg mb-2">ヘルシーメニュー</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              グルテンフリー・ヴィーガン対応。<br>美容・健康意識の高い方にも<br>安心してお楽しみいただけます。
+            </p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ⑤ 体験談セクション -->
-    <section class="bg-grind-gray py-20 px-6 fade-in">
+    <!-- ③ 人気メニューセクション -->
+    <section class="bg-white py-20 px-6 fade-in">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
-          会員の<span class="text-grind-red">リアルな声</span>
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          人気メニュー
         </h2>
-        <p class="text-center text-grind-light text-sm mb-14">Testimonials</p>
+        <p class="text-center text-gray-500 text-sm mb-12">Popular Menu</p>
 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img
+              src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&q=80"
+              alt="抹茶ラテ"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="font-bold text-verde-dark text-lg">抹茶ラテ</h3>
+              <p class="text-gray-500 text-sm mt-1">宇治抹茶と有機オーツミルクのやさしい一杯</p>
+              <p class="text-verde-light font-bold mt-3">¥680</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+              alt="グリーンボウル"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="font-bold text-verde-dark text-lg">グリーンボウル</h3>
+              <p class="text-gray-500 text-sm mt-1">旬の野菜と穀物をたっぷり使ったヘルシーランチ</p>
+              <p class="text-verde-light font-bold mt-3">¥1,200</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80"
+              alt="米粉スコーン"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="font-bold text-verde-dark text-lg">米粉スコーン</h3>
+              <p class="text-gray-500 text-sm mt-1">グルテンフリー。ほっくりやさしい甘さ</p>
+              <p class="text-verde-light font-bold mt-3">¥480</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ フォトギャラリーセクション -->
+    <section class="bg-verde-bg py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          店内の雰囲気
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-12">Gallery</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80"
+               alt="カフェ内観" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+               alt="コーヒーを楽しむ様子" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80"
+               alt="カフェの席" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&q=80"
+               alt="こだわりのコーヒー" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+               alt="カフェで作業するお客様" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80"
+               alt="観葉植物" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ お客様の声セクション -->
+    <section class="bg-white py-20 px-6 fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          お客様の声
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-10">Customer Reviews</p>
+
+        <!-- 総合評価バッジ -->
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex items-center gap-4 bg-verde-bg rounded-full px-8 py-4 shadow-sm">
+            <span class="text-4xl font-bold text-verde-dark">4.9</span>
+            <div>
+              <div class="text-yellow-400 text-xl tracking-widest">★★★★★</div>
+              <div class="text-gray-400 text-xs">累計 127件のレビュー</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- レビューカード3枚 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
-            <div class="flex flex-wrap gap-2 mb-4 items-center">
-              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 82kg</div>
-              <div class="text-grind-light text-sm">→</div>
-              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 71kg</div>
-            </div>
-            <p class="text-white/80 text-sm leading-relaxed mb-4">
-              "3ヶ月で11kg落とせました。食事管理まで一緒にやってもらえたのが大きかった。一人じゃ絶対続かなかったです。"
+          <div class="bg-verde-bg rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-400 text-lg tracking-widest mb-3">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-5">
+              "週3で通い詰めています。Wi-Fiが速くて席も広いので、集中して仕事ができます。抹茶ラテが本当においしい！"
             </p>
-            <div class="text-grind-red font-bold text-sm">Aさん・32歳・会社員</div>
-            <div class="text-grind-light text-xs mt-1">INTENSIVEプラン3ヶ月</div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-verde-pale flex items-center justify-center text-verde-dark font-bold text-sm">A</div>
+              <div>
+                <div class="text-verde-dark font-bold text-sm">Aさん</div>
+                <div class="text-gray-400 text-xs">30代・フリーランス</div>
+              </div>
+            </div>
           </div>
 
-          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
-            <div class="flex flex-wrap gap-2 mb-4 items-center">
-              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 76kg</div>
-              <div class="text-grind-light text-sm">→</div>
-              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 68kg</div>
-            </div>
-            <p class="text-white/80 text-sm leading-relaxed mb-4">
-              "週2回だけでここまで変われるとは思いませんでした。体重より体型が変わったのが一番嬉しい！"
+          <div class="bg-verde-bg rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-400 text-lg tracking-widest mb-3">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-5">
+              "グルテンフリーのスコーンが最高！アレルギーがあっても安心して食べられるお店を探していたので本当に助かります。"
             </p>
-            <div class="text-grind-red font-bold text-sm">Bさん・28歳・エンジニア</div>
-            <div class="text-grind-light text-xs mt-1">STANDARDプラン3ヶ月</div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-verde-pale flex items-center justify-center text-verde-dark font-bold text-sm">B</div>
+              <div>
+                <div class="text-verde-dark font-bold text-sm">Bさん</div>
+                <div class="text-gray-400 text-xs">20代・会社員</div>
+              </div>
+            </div>
           </div>
 
-          <div class="bg-grind-dark rounded-lg p-6 border border-grind-mid">
-            <div class="flex flex-wrap gap-2 mb-4 items-center">
-              <div class="bg-grind-red text-white text-xs font-black px-3 py-1">BEFORE 90kg</div>
-              <div class="text-grind-light text-sm">→</div>
-              <div class="bg-white text-grind-dark text-xs font-black px-3 py-1">AFTER 77kg</div>
-            </div>
-            <p class="text-white/80 text-sm leading-relaxed mb-4">
-              "ずっと運動が苦手で諦めていましたが、トレーナーさんが親身に対応してくれてやる気が出ました。"
+          <div class="bg-verde-bg rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-400 text-lg tracking-widest mb-3">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-5">
+              "子どもと一緒に来たのですが、スタッフさんが温かく迎えてくれて居心地最高でした。ヴィーガンメニューも充実！"
             </p>
-            <div class="text-grind-red font-bold text-sm">Cさん・40歳・自営業</div>
-            <div class="text-grind-light text-xs mt-1">INTENSIVEプラン3ヶ月</div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-verde-pale flex items-center justify-center text-verde-dark font-bold text-sm">C</div>
+              <div>
+                <div class="text-verde-dark font-bold text-sm">Cさん</div>
+                <div class="text-gray-400 text-xs">30代・主婦</div>
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ⑥ 料金プランセクション -->
-    <section class="bg-grind-dark py-20 px-6 fade-in">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
-          料金<span class="text-grind-red">プラン</span>
+    <!-- ⑥ 来店特典セクション -->
+    <section class="bg-verde-dark py-20 px-6 fade-in">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="text-verde-pale text-xs tracking-[0.3em] mb-4">SPECIAL OFFER</p>
+        <h2 class="text-white text-2xl md:text-3xl font-bold mb-12">
+          初回来店の方への特典 <span aria-hidden="true">🎁</span>
         </h2>
-        <p class="text-center text-grind-light text-sm mb-14">Pricing</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- クーポン券 -->
+        <div class="relative inline-block w-full max-w-md">
+          <!-- 左右の切り込み -->
+          <div class="absolute -left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 bg-white rounded-full opacity-10"></div>
+          <div class="absolute -right-3.5 top-1/2 -translate-y-1/2 w-7 h-7 bg-white rounded-full opacity-10"></div>
 
-          <div class="border border-grind-mid rounded-lg p-8">
-            <p class="text-grind-light text-xs tracking-widest mb-2">STANDARD</p>
-            <div class="text-white text-4xl font-black mb-1">
-              ¥49,800<span class="text-grind-light text-base font-normal">/月</span>
+          <div class="border-2 border-dashed border-verde-pale/60 rounded-2xl px-10 py-8">
+            <p class="text-verde-pale text-xs tracking-widest mb-2">初回来店特典</p>
+            <div class="my-4">
+              <span class="text-white text-lg">ドリンク1杯</span>
+              <span class="text-verde-pale text-4xl font-bold mx-2">無料</span>
+              <span class="text-white text-lg">サービス</span>
             </div>
-            <p class="text-grind-light text-xs mb-6">週2回・月8セッション</p>
-            <ul class="space-y-3 text-sm text-white/80">
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> マンツーマントレーニング</li>
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 食事アドバイス</li>
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 体組成測定</li>
-            </ul>
+            <div class="border-t border-dashed border-verde-pale/30 my-5"></div>
+            <p class="text-verde-pale text-sm leading-relaxed">
+              ご来店の際にこのページをスタッフへ<br>お見せください
+            </p>
+            <div class="mt-5 inline-block bg-white text-verde-dark font-bold text-sm px-6 py-2.5 rounded-full">
+              <span aria-hidden="true">📱</span> このページを見せる
+            </div>
+            <p class="text-verde-pale/50 text-xs mt-4">
+              ※ お一人様1回限り　※ 他の割引との併用不可
+            </p>
           </div>
-
-          <div class="border-2 border-grind-red rounded-lg p-8 relative">
-            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-grind-red text-white text-xs font-black px-4 py-1">
-              おすすめ
-            </div>
-            <p class="text-grind-red text-xs tracking-widest mb-2">INTENSIVE</p>
-            <div class="text-white text-4xl font-black mb-1">
-              ¥69,800<span class="text-grind-light text-base font-normal">/月</span>
-            </div>
-            <p class="text-grind-light text-xs mb-6">週3回・月12セッション</p>
-            <ul class="space-y-3 text-sm text-white/80">
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> マンツーマントレーニング</li>
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 食事・生活習慣サポート</li>
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> 体組成測定</li>
-              <li class="flex items-center gap-2"><span class="text-grind-red font-bold">✓</span> LINEサポート無制限</li>
-            </ul>
-          </div>
-
         </div>
-        <p class="text-center text-grind-light text-xs mt-6">
-          ※ 全プラン初回無料体験あり　※ 入会金・縛りなし
-        </p>
+
+        <p class="text-white/40 text-xs mt-8">ぜひ一度、Café Verde にお越しください</p>
       </div>
     </section>
 
-    <!-- ⑦ 最終CTAセクション -->
-    <section id="cta" class="bg-grind-red py-20 px-6 text-center fade-in">
-      <p class="text-white/70 text-xs tracking-[0.3em] mb-4">FREE TRIAL</p>
-      <h2 class="text-white text-3xl md:text-4xl font-black mb-4">
-        まず、無料体験から<br>始めよう。
-      </h2>
-      <p class="text-white/70 text-sm mb-10">
-        体験当日は手ぶらでOK。着替え・シューズはご用意しています。
-      </p>
-      <a href="tel:03-XXXX-XXXX"
-         class="inline-block bg-white text-grind-red font-black px-12 py-4 hover:bg-gray-100 transition text-sm tracking-widest mb-6">
-        無料体験を予約する →
-      </a>
-      <div class="text-white/80 text-sm">
-        <span aria-hidden="true">📞</span> お電話でも受付中　<span class="font-bold">03-XXXX-XXXX</span>
-      </div>
-      <p class="text-white/40 text-xs mt-4">受付時間：平日 10:00〜21:00 / 土日 9:00〜19:00</p>
-    </section>
-
-    <!-- ⑧ アクセスセクション -->
-    <section class="bg-grind-dark py-20 px-6 fade-in">
+    <!-- ⑦ 店舗情報セクション（メインCTA） -->
+    <section id="access" class="bg-white py-20 px-6 fade-in">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-2">
-          アクセス・<span class="text-grind-red">営業時間</span>
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          アクセス・営業時間
         </h2>
-        <p class="text-center text-grind-light text-sm mb-12">Access & Hours</p>
+        <p class="text-center text-gray-500 text-sm mb-12">Access & Hours</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
-          <div class="rounded-lg overflow-hidden">
+          <!-- 地図 -->
+          <div class="rounded-2xl overflow-hidden shadow-sm">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747968668696!2d139.70113!3d35.658034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC35YWt!5e0!3m2!1sja!2sjp!4v1700000000000"
-              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" title="GRINDの地図">
+              width="100%"
+              height="280"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Café Verde の地図">
             </iframe>
           </div>
 
+          <!-- 店舗情報 -->
           <div class="space-y-6">
             <div>
-              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">ADDRESS</p>
-              <p class="text-white">東京都渋谷区〇〇町2-3-4<br>
-                <span class="text-sm text-grind-light">渋谷駅より徒歩3分</span>
+              <p class="text-xs text-verde-light font-bold tracking-widest mb-1">ADDRESS</p>
+              <p class="text-gray-700">東京都渋谷区〇〇町1-2-3<br>
+                <span class="text-sm text-gray-400">渋谷駅より徒歩5分</span>
               </p>
             </div>
             <div>
-              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">HOURS</p>
-              <p class="text-white">
-                平日　10:00 〜 21:00<br>
+              <p class="text-xs text-verde-light font-bold tracking-widest mb-1">HOURS</p>
+              <p class="text-gray-700">
+                月〜金　8:00 〜 20:00<br>
                 土・日　9:00 〜 19:00<br>
-                <span class="text-sm text-grind-light">定休日：年中無休</span>
+                <span class="text-sm text-gray-400">定休日：年中無休</span>
               </p>
             </div>
             <div>
-              <p class="text-xs text-grind-red font-bold tracking-widest mb-1">TEL</p>
-              <p class="text-white">03-XXXX-XXXX</p>
+              <p class="text-xs text-verde-light font-bold tracking-widest mb-1">TEL</p>
+              <p class="text-gray-700">03-XXXX-XXXX</p>
             </div>
-            <a href="#cta"
-               class="inline-block bg-grind-red text-white font-black px-8 py-3 hover:bg-red-600 transition text-sm tracking-widest w-full text-center">
-              無料体験を予約する →
+            <a href="tel:03-XXXX-XXXX"
+               class="inline-block bg-verde-dark text-white font-bold px-8 py-3 rounded-full hover:bg-verde-mid transition text-sm tracking-wide w-full text-center">
+              <span aria-hidden="true">📞</span> お電話でのお問い合わせ
             </a>
           </div>
 
@@ -374,51 +380,126 @@
       </div>
     </section>
 
+    <!-- ⑧ よくある質問セクション -->
+    <section class="bg-verde-bg py-20 px-6 fade-in">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-center text-2xl md:text-3xl font-bold text-verde-dark mb-2">
+          よくある質問
+        </h2>
+        <p class="text-center text-gray-500 text-sm mb-12">FAQ</p>
+
+        <div class="space-y-3">
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-bold text-verde-dark text-sm">Q. 予約は必要ですか？</span>
+              <span class="faq-icon text-verde-mid text-lg transition-transform duration-300">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-600 text-sm leading-relaxed border-t border-verde-pale pt-4">
+                予約不要でご来店いただけます。ただし混雑時はお待ちいただく場合がございます。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-bold text-verde-dark text-sm">Q. 子連れでも入れますか？</span>
+              <span class="faq-icon text-verde-mid text-lg transition-transform duration-300">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-600 text-sm leading-relaxed border-t border-verde-pale pt-4">
+                もちろんです！お子様連れのお客様も大歓迎です。ベビーカーでのご来店もお気軽にどうぞ。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-bold text-verde-dark text-sm">Q. Wi-Fiは無料で使えますか？</span>
+              <span class="faq-icon text-verde-mid text-lg transition-transform duration-300">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-600 text-sm leading-relaxed border-t border-verde-pale pt-4">
+                はい、全席で高速Wi-Fiを無料でご利用いただけます。パスワードはご来店時にスタッフへお申し付けください。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-bold text-verde-dark text-sm">Q. グルテンフリーのメニューはありますか？</span>
+              <span class="faq-icon text-verde-mid text-lg transition-transform duration-300">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-600 text-sm leading-relaxed border-t border-verde-pale pt-4">
+                はい。フードメニューの大半がグルテンフリー対応です。ヴィーガン対応メニューもございます。アレルギーのご不安はお気軽にスタッフへご相談ください。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-bold text-verde-dark text-sm">Q. 電源コンセントは使えますか？</span>
+              <span class="faq-icon text-verde-mid text-lg transition-transform duration-300">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-600 text-sm leading-relaxed border-t border-verde-pale pt-4">
+                はい、全席にコンセントをご用意しています。お仕事・勉強・リモートワークにも安心してご利用ください。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑨ SNS誘導 -->
+    <section class="bg-verde-dark py-16 px-6 text-center fade-in">
+      <p class="text-verde-pale text-xs tracking-widest mb-3">FOLLOW US</p>
+      <h2 class="text-white text-2xl font-bold mb-3">Instagramでも発信中 <span aria-hidden="true">📷</span></h2>
+      <p class="text-white/70 text-sm mb-8">
+        旬のメニュー・店内の様子・スタッフの日常をお届けしています
+      </p>
+      <a href="https://instagram.com"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-block bg-white text-verde-dark font-bold px-8 py-3 rounded-full hover:bg-verde-pale transition text-sm tracking-wide">
+        @cafeverde をフォローする
+      </a>
+    </section>
   </main>
 
-  <footer class="bg-black text-grind-light text-center text-xs py-6">
-    © 2026 GRIND Personal Gym. All rights reserved.
+  <footer class="bg-gray-900 text-gray-400 text-center text-xs py-6">
+    © 2026 Café Verde. All rights reserved.
   </footer>
 
   <script>
-    // フェードインアニメーション
+    // アコーディオンFAQ
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        answer.classList.toggle('hidden');
+        icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      });
+    });
+
     if (!('IntersectionObserver' in window)) {
       document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
     } else {
-      const fadeObserver = new IntersectionObserver(entries => {
+      const observer = new IntersectionObserver(entries => {
         entries.forEach(e => {
           if (e.isIntersecting) {
             e.target.classList.add('visible');
-            fadeObserver.unobserve(e.target);
+            observer.unobserve(e.target);
           }
         });
       }, { threshold: 0.1 });
-      document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     }
-
-    // カウントアップアニメーション
-    const countObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        const el = e.target;
-        const target = parseInt(el.dataset.target, 10);
-        const suffix = el.dataset.suffix || '';
-        const isDecimal = el.dataset.decimal === 'true';
-        const duration = 1500;
-        const interval = 16;
-        const increment = target / (duration / interval);
-        let current = 0;
-        const timer = setInterval(() => {
-          current = Math.min(current + increment, target);
-          el.textContent = isDecimal
-            ? (current / 10).toFixed(1) + suffix
-            : Math.floor(current) + suffix;
-          if (current >= target) clearInterval(timer);
-        }, interval);
-        countObserver.unobserve(el);
-      });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.count-up').forEach(el => countObserver.observe(el));
   </script>
 </body>
 </html>
