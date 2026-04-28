@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mori. hair | ナチュラルヘアサロン</title>
+  <meta name="description" content="完全予約制・少人数のナチュラルヘアサロン。オーガニック薬剤を使用し、ゆったりと過ごせる空間でお待ちしています。" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="mori. hair | ナチュラルヘアサロン" />
+  <meta property="og:description" content="完全予約制・少人数のナチュラルヘアサロン。オーガニック薬剤を使用し、ゆったりと過ごせる空間でお待ちしています。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&amp;auto=format" />
+  <meta property="og:url" content="https://example.com/hairsalon.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="mori. hair | ナチュラルヘアサロン" />
+  <meta name="twitter:description" content="完全予約制・少人数のナチュラルヘアサロン。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&amp;auto=format" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'salon-beige': '#f5f0e8',
+            'salon-light': '#e8dcc8',
+            'salon-terra': '#a07050',
+            'salon-dark': '#3d2e1e',
+            'salon-green': '#3d7a5a',
+            'salon-muted': '#7a6a55',
+          },
+          fontFamily: {
+            mincho: ['"Shippori Mincho"', 'serif'],
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    /* フェードインアニメーション */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* FAQアコーディオン */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer.open {
+      max-height: 500px;
+    }
+  </style>
+</head>
+<body class="bg-salon-beige font-sans text-salon-dark antialiased">
+
+  <!-- Hero -->
+  <section aria-label="ヒーロー" class="relative h-screen min-h-[600px] flex items-center justify-center text-center overflow-hidden">
+    <!-- 背景画像 -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&amp;auto=format&amp;fit=crop"
+        alt=""
+        role="presentation"
+        aria-hidden="true"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-salon-dark/50"></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div class="relative z-10 px-6">
+      <p class="text-salon-light text-xs tracking-[0.4em] mb-4 font-light">HAIR SALON</p>
+      <h1 aria-label="mori. hair" class="font-mincho text-5xl md:text-7xl text-white font-light tracking-widest mb-4">mori.</h1>
+      <p aria-hidden="true" class="text-salon-light text-sm tracking-[0.3em] mb-3 font-light">hair</p>
+      <div class="w-12 h-px bg-salon-terra mx-auto mb-6"></div>
+      <p class="text-white text-lg md:text-xl font-mincho font-light mb-2">自分を、もっとすきになる時間を。</p>
+      <p class="text-salon-light text-xs tracking-widest mb-10 font-light">完全予約制 / オーガニック薬剤使用</p>
+
+      <!-- CTAボタン -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://lin.ee/example"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LINE で予約する（外部サイト）"
+          class="inline-flex items-center justify-center gap-2 bg-salon-green text-white px-8 py-3.5 text-sm tracking-widest hover:bg-opacity-90 transition"
+        >
+          <span>LINE で予約する</span>
+        </a>
+        <a
+          href="https://beauty.hotpepper.jp/example"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ホットペッパービューティーで予約する（外部サイト）"
+          class="inline-flex items-center justify-center gap-2 border border-white text-white px-8 py-3.5 text-sm tracking-widest hover:bg-white hover:text-salon-dark transition"
+        >
+          <span>ホットペッパービューティー</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- スクロール誘導 -->
+    <div aria-hidden="true" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <span class="text-salon-light text-[10px] tracking-[0.3em]">SCROLL</span>
+      <div class="w-px h-10 bg-salon-light animate-bounce"></div>
+    </div>
+  </section>
+
+  <!-- Concept -->
+  <section aria-label="コンセプト" class="py-24 px-6 bg-white">
+    <div class="max-w-xl mx-auto text-center fade-in">
+      <p class="text-salon-terra text-xs tracking-[0.4em] mb-8 font-light">CONCEPT</p>
+      <p class="font-mincho text-2xl md:text-3xl text-salon-dark font-light leading-relaxed mb-8">
+        忙しい毎日の中で、<br />
+        ほんの少しだけ、<br />
+        自分のための時間を。
+      </p>
+      <div class="w-8 h-px bg-salon-terra mx-auto mb-8"></div>
+      <p class="text-salon-muted text-sm leading-loose font-light">
+        mori. hair は、完全予約制・少人数制のヘアサロンです。<br />
+        オーガニック薬剤と、落ち着いた森の空気感をまとった空間で、<br />
+        あなただけのゆったりとした時間をお届けします。
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section aria-label="特徴" class="py-24 px-6 bg-salon-beige">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-center text-salon-terra text-xs tracking-[0.4em] mb-16 font-light fade-in">FEATURES</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <div class="text-center fade-in">
+          <div class="text-4xl mb-5" aria-hidden="true">🌿</div>
+          <h3 class="font-mincho text-lg text-salon-dark mb-3 tracking-wide">オーガニック薬剤</h3>
+          <div class="w-6 h-px bg-salon-terra mx-auto mb-4"></div>
+          <p class="text-salon-muted text-sm leading-loose font-light">
+            頭皮・髪へのやさしさを最優先に。<br />
+            天然由来成分のカラー剤・トリートメントを使用し、アレルギーが心配な方も安心してご来店いただけます。
+          </p>
+        </div>
+
+        <div class="text-center fade-in">
+          <div class="text-4xl mb-5" aria-hidden="true">🕐</div>
+          <h3 class="font-mincho text-lg text-salon-dark mb-3 tracking-wide">完全予約制・少人数</h3>
+          <div class="w-6 h-px bg-salon-terra mx-auto mb-4"></div>
+          <p class="text-salon-muted text-sm leading-loose font-light">
+            1日のご予約は少人数限定。<br />
+            待ち時間なく、じっくりとカウンセリングの時間をお取りします。
+          </p>
+        </div>
+
+        <div class="text-center fade-in">
+          <div class="text-4xl mb-5" aria-hidden="true">☕</div>
+          <h3 class="font-mincho text-lg text-salon-dark mb-3 tracking-wide">ゆったりした空間</h3>
+          <div class="w-6 h-px bg-salon-terra mx-auto mb-4"></div>
+          <p class="text-salon-muted text-sm leading-loose font-light">
+            静かで落ち着いた店内。<br />
+            施術中はハーブティーをお楽しみいただけます。日常から少し離れた、あなただけの時間を。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- For You -->
+  <section aria-label="こんな方へ" class="py-24 px-6 bg-white">
+    <div class="max-w-2xl mx-auto fade-in">
+      <p class="text-center text-salon-terra text-xs tracking-[0.4em] mb-12 font-light">こんな方へ</p>
+      <ul class="space-y-5 list-none">
+        <li class="flex items-start gap-4 p-5 bg-salon-beige rounded">
+          <span class="text-salon-terra font-mincho text-lg mt-0.5" aria-hidden="true">✓</span>
+          <p class="text-salon-dark text-sm leading-loose font-light">頭皮のかゆみ・敏感肌でカラーをためらっていた方</p>
+        </li>
+        <li class="flex items-start gap-4 p-5 bg-salon-beige rounded">
+          <span class="text-salon-terra font-mincho text-lg mt-0.5" aria-hidden="true">✓</span>
+          <p class="text-salon-dark text-sm leading-loose font-light">にぎやかな美容室が苦手で、ゆっくり話せる場所を求めていた方</p>
+        </li>
+        <li class="flex items-start gap-4 p-5 bg-salon-beige rounded">
+          <span class="text-salon-terra font-mincho text-lg mt-0.5" aria-hidden="true">✓</span>
+          <p class="text-salon-dark text-sm leading-loose font-light">骨格・顔型に合った「似合わせカット」を試してみたい方</p>
+        </li>
+        <li class="flex items-start gap-4 p-5 bg-salon-beige rounded">
+          <span class="text-salon-terra font-mincho text-lg mt-0.5" aria-hidden="true">✓</span>
+          <p class="text-salon-dark text-sm leading-loose font-light">忙しい日々の中で、自分を労る時間を作りたい方</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section aria-label="メニュー・料金" class="py-24 px-6 bg-salon-beige">
+    <div class="max-w-2xl mx-auto fade-in">
+      <p class="text-center text-salon-terra text-xs tracking-[0.4em] mb-4 font-light">MENU &amp; PRICE</p>
+      <p class="text-center font-mincho text-2xl text-salon-dark font-light mb-12">メニュー・料金</p>
+
+      <dl class="divide-y divide-salon-light">
+        <div class="flex justify-between items-center py-5">
+          <div>
+            <dt class="text-salon-dark text-sm tracking-wide">カット</dt>
+            <dd class="text-salon-muted text-xs mt-1 font-light">シャンプー・ブロー込み</dd>
+          </div>
+          <dd class="font-mincho text-salon-dark text-base">¥5,500〜</dd>
+        </div>
+        <div class="flex justify-between items-center py-5">
+          <div>
+            <dt class="text-salon-dark text-sm tracking-wide">カット＋カラー</dt>
+            <dd class="text-salon-muted text-xs mt-1 font-light">オーガニックカラー使用</dd>
+          </div>
+          <dd class="font-mincho text-salon-dark text-base">¥12,000〜</dd>
+        </div>
+        <div class="flex justify-between items-center py-5">
+          <div>
+            <dt class="text-salon-dark text-sm tracking-wide">カット＋トリートメント</dt>
+            <dd class="text-salon-muted text-xs mt-1 font-light">天然由来成分配合</dd>
+          </div>
+          <dd class="font-mincho text-salon-dark text-base">¥9,000〜</dd>
+        </div>
+        <div class="flex justify-between items-center py-5">
+          <div>
+            <dt class="text-salon-dark text-sm tracking-wide">カット＋カラー＋トリートメント</dt>
+            <dd class="text-salon-muted text-xs mt-1 font-light">フルケアコース</dd>
+          </div>
+          <dd class="font-mincho text-salon-dark text-base">¥17,000〜</dd>
+        </div>
+        <div class="flex justify-between items-center py-5">
+          <div>
+            <dt class="text-salon-dark text-sm tracking-wide">ヘッドスパ</dt>
+            <dd class="text-salon-muted text-xs mt-1 font-light">30分</dd>
+          </div>
+          <dd class="font-mincho text-salon-dark text-base">¥4,000〜</dd>
+        </div>
+      </dl>
+
+      <p class="text-center text-salon-muted text-xs mt-8 font-light">
+        ※ 料金はすべて税込みです。長さ・量によって異なる場合があります。<br />
+        詳しくはご予約時にお問い合わせください。
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section aria-label="お客様の声" class="py-24 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-center text-salon-terra text-xs tracking-[0.4em] mb-4 font-light fade-in">VOICE</p>
+      <p class="text-center font-mincho text-2xl text-salon-dark font-light mb-14 fade-in">お客様の声</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-salon-beige p-7 rounded fade-in">
+          <div class="flex gap-1 mb-4 text-salon-terra" aria-label="5つ星評価">★★★★★</div>
+          <p class="text-salon-dark text-sm leading-loose font-light mb-5">
+            「アレルギーがあってずっとカラーをあきらめていたのですが、ここに来てから頭皮が全然痛くならなくなりました。もっと早く来ればよかったです。」
+          </p>
+          <p class="text-salon-muted text-xs">— 30代女性</p>
+        </div>
+
+        <div class="bg-salon-beige p-7 rounded fade-in">
+          <div class="flex gap-1 mb-4 text-salon-terra" aria-label="5つ星評価">★★★★★</div>
+          <p class="text-salon-dark text-sm leading-loose font-light mb-5">
+            「静かで落ち着いた空間で、施術中もゆっくり話せて毎回リフレッシュできます。ハーブティーも美味しくて癒されます。」
+          </p>
+          <p class="text-salon-muted text-xs">— 40代女性</p>
+        </div>
+
+        <div class="bg-salon-beige p-7 rounded fade-in">
+          <div class="flex gap-1 mb-4 text-salon-terra" aria-label="5つ星評価">★★★★★</div>
+          <p class="text-salon-dark text-sm leading-loose font-light mb-5">
+            「顔の形に合わせて提案してくれるので、いつも仕上がりが自然で気に入っています。混んでいないので予約もとりやすいです。」
+          </p>
+          <p class="text-salon-muted text-xs">— 20代女性</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-label="よくある質問" class="py-24 px-6 bg-salon-beige">
+    <div class="max-w-2xl mx-auto fade-in">
+      <p class="text-center text-salon-terra text-xs tracking-[0.4em] mb-4 font-light">FAQ</p>
+      <p class="text-center font-mincho text-2xl text-salon-dark font-light mb-12">よくある質問</p>
+
+      <div class="space-y-3" id="faq-list">
+
+        <div class="faq-item bg-white rounded overflow-hidden">
+          <button
+            class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center text-salon-dark text-sm tracking-wide hover:bg-salon-light transition"
+            aria-expanded="false"
+            aria-controls="faq-answer-1"
+          >
+            <span>駐車場はありますか？</span>
+            <span class="faq-icon text-salon-terra font-light text-xl transition-transform" aria-hidden="true">＋</span>
+          </button>
+          <div id="faq-answer-1" class="faq-answer px-6 text-salon-muted text-sm leading-loose font-light">
+            <p class="py-4">はい、店舗前に2台分の駐車スペースをご用意しております。満車の場合は近隣のコインパーキングをご利用ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded overflow-hidden">
+          <button
+            class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center text-salon-dark text-sm tracking-wide hover:bg-salon-light transition"
+            aria-expanded="false"
+            aria-controls="faq-answer-2"
+          >
+            <span>子ども連れでも大丈夫ですか？</span>
+            <span class="faq-icon text-salon-terra font-light text-xl transition-transform" aria-hidden="true">＋</span>
+          </button>
+          <div id="faq-answer-2" class="faq-answer px-6 text-salon-muted text-sm leading-loose font-light">
+            <p class="py-4">小さなお子様連れでもご来店いただけます。キッズスペースはございませんが、ゆったりとした空間ですのでお気軽にどうぞ。ご不安な場合はご予約時にご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded overflow-hidden">
+          <button
+            class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center text-salon-dark text-sm tracking-wide hover:bg-salon-light transition"
+            aria-expanded="false"
+            aria-controls="faq-answer-3"
+          >
+            <span>アレルギーがあるのですが施術できますか？</span>
+            <span class="faq-icon text-salon-terra font-light text-xl transition-transform" aria-hidden="true">＋</span>
+          </button>
+          <div id="faq-answer-3" class="faq-answer px-6 text-salon-muted text-sm leading-loose font-light">
+            <p class="py-4">はい、対応可能です。当店ではオーガニック・天然由来成分のカラー剤を使用しており、敏感肌やアレルギーがある方でもご利用いただいているお客様が多くいらっしゃいます。ご予約時にアレルギーの種類をお知らせいただけると、より適切にご対応できます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded overflow-hidden">
+          <button
+            class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center text-salon-dark text-sm tracking-wide hover:bg-salon-light transition"
+            aria-expanded="false"
+            aria-controls="faq-answer-4"
+          >
+            <span>キャンセルはいつまで可能ですか？</span>
+            <span class="faq-icon text-salon-terra font-light text-xl transition-transform" aria-hidden="true">＋</span>
+          </button>
+          <div id="faq-answer-4" class="faq-answer px-6 text-salon-muted text-sm leading-loose font-light">
+            <p class="py-4">ご予約日の前日18時までにご連絡ください。当日キャンセルはキャンセル料（施術料金の50%）が発生します。ご変更・ご相談はLINEからお気軽にどうぞ。</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded overflow-hidden">
+          <button
+            class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center text-salon-dark text-sm tracking-wide hover:bg-salon-light transition"
+            aria-expanded="false"
+            aria-controls="faq-answer-5"
+          >
+            <span>施術にかかる時間はどのくらいですか？</span>
+            <span class="faq-icon text-salon-terra font-light text-xl transition-transform" aria-hidden="true">＋</span>
+          </button>
+          <div id="faq-answer-5" class="faq-answer px-6 text-salon-muted text-sm leading-loose font-light">
+            <p class="py-4">カットのみで約60〜75分、カット＋カラーで約2.5〜3時間が目安です。じっくりカウンセリングの時間もお取りしますので、お時間に余裕を持ってお越しください。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Footer -->
+  <footer aria-label="予約・店舗情報" class="py-24 px-6 bg-salon-dark text-center fade-in">
+    <p class="text-salon-terra text-xs tracking-[0.4em] mb-4 font-light">RESERVATION</p>
+    <p class="font-mincho text-3xl text-white font-light mb-4">ご予約・お問い合わせ</p>
+    <div class="w-8 h-px bg-salon-terra mx-auto mb-8"></div>
+    <p class="text-salon-light text-sm font-light mb-10">
+      ご不明な点はお気軽にLINEからご相談ください。<br />
+      ご予約はLINEまたはホットペッパービューティーから承っております。
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+      <a
+        href="https://lin.ee/example"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LINE で予約する（外部サイト）"
+        class="inline-flex items-center justify-center gap-2 bg-salon-green text-white px-10 py-4 text-sm tracking-widest hover:bg-opacity-90 transition"
+      >
+        LINE で予約する
+      </a>
+      <a
+        href="https://beauty.hotpepper.jp/example"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ホットペッパービューティーで予約する（外部サイト）"
+        class="inline-flex items-center justify-center gap-2 bg-[#e83e8c] text-white px-10 py-4 text-sm tracking-widest hover:bg-opacity-90 transition"
+      >
+        ホットペッパービューティー
+      </a>
+    </div>
+
+    <!-- 店舗情報 -->
+    <address class="border-t border-white/10 pt-10 text-salon-muted text-xs leading-loose font-light space-y-1 not-italic">
+      <p>mori. hair</p>
+      <p>〒000-0000 東京都○○区○○1-2-3</p>
+      <p>営業時間：10:00〜19:00（最終受付 18:00）</p>
+      <p>定休日：月曜日・第2・第4火曜日</p>
+      <p>最寄り駅：○○線「○○駅」徒歩5分</p>
+    </address>
+
+    <!-- SNS -->
+    <div class="mt-8">
+      <a
+        href="https://www.instagram.com/example"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram @mori.hair（外部サイト）"
+        class="text-salon-muted text-xs tracking-widest hover:text-white transition"
+      >
+        Instagram @mori.hair
+      </a>
+    </div>
+
+    <p class="mt-10 text-white/20 text-xs">© 2026 mori. hair All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // FAQアコーディオン
+    document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        var icon = this.querySelector('.faq-icon');
+        var isOpen = answer.classList.contains('open');
+
+        // 他を全部閉じる
+        document.querySelectorAll('.faq-answer').forEach(function(a) {
+          a.classList.remove('open');
+        });
+        document.querySelectorAll('.faq-icon').forEach(function(i) {
+          i.textContent = '＋';
+          i.style.transform = 'rotate(0deg)';
+        });
+        document.querySelectorAll('.faq-toggle').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+        });
+
+        // クリックした項目を開く（すでに開いていたら閉じるだけ）
+        if (!isOpen) {
+          answer.classList.add('open');
+          icon.textContent = '－';
+          icon.style.transform = 'rotate(180deg)';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // フェードインアニメーション（IntersectionObserver）
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
